@@ -10,8 +10,8 @@ const Home = () => {
 	const [isGreen, setGreen] = useState(false);
 	return (
 		<div className="">
-			<div className="soporte text-center mx-auto bg-dark"></div>
-			<div className="caja bg-dark text-center mx-auto">
+			<div className="soporte text-center mx-auto"></div>
+			<div className="caja text-center mx-auto">
 				<div>
 					<button
 						onClick={() => {
@@ -20,7 +20,7 @@ const Home = () => {
 							setGreen(false);
 						}}
 						className={`${
-							isRed === true ? "bg-danger" : ""
+							isRed === true ? "botonrojo" : ""
 						} rounded-circle`}></button>
 				</div>
 				<div className="">
@@ -31,7 +31,7 @@ const Home = () => {
 							setGreen(false);
 						}}
 						className={`${
-							isYellow === true ? "bg-warning" : ""
+							isYellow === true ? "botonamarillo" : ""
 						} rounded-circle h-33`}></button>
 				</div>
 				<div>
@@ -42,7 +42,7 @@ const Home = () => {
 							setGreen(true);
 						}}
 						className={`${
-							isGreen === true ? "bg-success" : ""
+							isGreen === true ? "botonverde" : ""
 						} rounded-circle h-33`}></button>
 				</div>
 			</div>
